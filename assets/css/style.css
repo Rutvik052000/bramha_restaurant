@@ -20,6 +20,7 @@
     --black: hsla(0, 0%, 0%, 1);
     --black-alpha-80: hsla(0, 0%, 0%, 0.8);
     --black-alpha-15: hsla(0, 0%, 0%, 0.15);
+    
 
     /* gradiant color */
 
@@ -502,7 +503,7 @@ img{
     font-weight: var(--weight-bold);
     line-height: 1em;
     text-transform: uppercase;
-    letter-spacing: 16px;
+    letter-spacing: 10px;
     padding-inline-start: 16px;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -627,6 +628,11 @@ img{
    max-width: max-content;
    margin-inline: auto;
    margin-block-end: 60px;
+   border-radius: 20px;
+ }
+ .logo img{
+  border-radius: 20px;
+  height: 100px;
  }
 
  .navbar-list{
@@ -1923,8 +1929,25 @@ textarea.input-field {
   }
 
 }
+.size-of-form{
+  max-width: 600px;
 
+}
 
+.size-of-form .padd{
+  padding: 30px;
+}
+.size-of-btn{
+  max-width: 100px;
+}
+.size-of-form-register{
+  max-width: 500px;
+  max-height: 800px;
+  margin-top: 15px;
+}
+.register-head{
+  margin: 20px;
+}
 
 
 

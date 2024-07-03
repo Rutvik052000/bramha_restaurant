@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- favicon -->
-     <!-- google font -->
+     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- google font -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,42 +19,41 @@
     <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-     <form action="auth/register" method="POST" class="form-left size-of-form-register container ">
+     <form action="auth/login" method="POST" class="form-left size-of-form container mt-4">
 
-              <h4 class="headline-1 text-center padd register-head">Registration</h4>
+              <h2 class="headline-1 text-center padd">Login</h2>
 
-              <div class="input-wrapper register-box">
-                <input type="text" name="first_name" placeholder="First Name" autocomplete="off" class="input-field">
 
-                <input type="text" name="last_name" placeholder="Last Name" autocomplete="off" class="input-field">
-
+              <div class="input-wrapper">
                 <input type="email" name="email" placeholder="Enter email" autocomplete="off" class="input-field">
 
-                <input type="number" name="phone" placeholder="Mobile Number" autocomplete="off" class="input-field">
-
                 <input type="password" name="password" placeholder="Enter password" autocomplete="off" class="input-field">
-
-                <input type="password" name="passwordConfirm" placeholder="conform password" autocomplete="off" class="input-field">
-
-
               </div>
 
-              <button type="submit" class="btn btn-secondary">
+              <button type="submit" class="btn btn-secondary size-of-btn">
                 <span class="text text-1">
-                  Register
+                  Login
                 </span>
-                <span class="text text-2" aria-hidden="ture">Register</span>
+                <span class="text text-2" aria-hidden="ture"> Login</span>
               </button>
-              {{#if message}}
+
+               <p class="form-text text-center padd">
+                If you are not singUp <a href="/register" class="link">Register</a>
+              </p>
+               {{#if message}}
                 <h4 class="alert alert-danger mt-4">{{message}}</h4>
-              {{/if}}
+            {{/if}}
+              
             </form>
-
-            {{!-- if conditon use in this type of html.hbs page --}}
-
            
-             <!-- custome js link -->
-     <!-- custome js link -->
+            
+
+
+
+
+
+
+    <!-- custome js link -->
     <script src="/script.js"></script>
 
     <!-- icon link -->
